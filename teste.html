@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Barra de Navegação Superior</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+            }
+            .navbar {
+                background-color: #4547B5;
+                color: white;
+                overflow: hidden;
+            }
+            .navbar a {
+                float: left;
+                padding: 15px 20px;
+                text-decoration: none;
+                color: white;
+            }
+            .navbar a:hover {
+                background-color: #FFB41F;
+            }
+            .content {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="navbar">
+            <h2 style="float: left; margin: 0; padding: 15px 20px;">WebStock</h2>
+            <a href="index.html">Início</a>
+            <a href="notificacoes.html">Notificações</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contanto.html">Contate-nos</a>
+        </div>
+<body>
+    <header>
+        
+        <div class="content">
+        <h1>Categorias</h1>
+        </div>
+        </nav>
+
+    </header>
+    
+    <main>
+        <div class="content">
+        <h2 id="itens">Itens Disponíveis</h2>
+        <div>
+        <ul>
+            <li>Cadernos</li>
+            <li>Lápis</li>
+            <li>Canetas</li> <button id="meuBotao">v</button>
+            <div id="info">
+                <ul>
+                    <li>Azuis
+                    <li>Pretas
+                    <li>Vermelhas</li>    
+                </ul>
+            </div>
+        
+            <script>
+                const botao = document.getElementById('meuBotao');
+                const info = document.getElementById('info');
+        
+                botao.addEventListener('click', function() {
+                    if (info.style.display === 'none') {
+                        info.style.display = 'block'; 
+                        botao.textContent = '^'; 
+                    } else {
+                        info.style.display = 'none'; 
+                        botao.textContent = 'v'; 
+                    }
+                });
+            </script>
+
+            <li>Apostilas <button id="MeuBotao">v</button> 
+            <div id="info2">
+                <ul>
+                    <li>Matemática/Português
+                    <li>Física/História    
+                    </li>
+                </ul>
+
+                <script>
+                    const MeuBotao = document.getElementById('MeuBotao');
+                    const info2 = document.getElementById('info2');
+            
+                    MeuBotao.addEventListener('click', function() {
+                        if (info2.style.display === 'none') {
+                            info2.style.display = 'block'; 
+                            MeuBotao.textContent = '^'; 
+                        } else {
+                            info2.style.display = 'none'; 
+                            MeuBotao.textContent = 'v'; 
+                        }
+                    });
+                </script>
+            <li>Borrachas
+            <li>Réguas</li>
+
+        <hr>
+
+        <nav>
+            <a href="index.html">Voltar</a>
+            <a href="notificacoes.html">Notificações</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
